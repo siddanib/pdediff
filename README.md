@@ -65,7 +65,7 @@ where `window_size=2k+1`.
 ### Training a plain amortised diffusion model on KS
 
 ```
-python main.py -m seed=0 mode=train experiment=KS_plain_amortized window={window_size} predictive_horizon={predictive_hor}
+python main.py -m seed=0 mode=train experiment=KS_plain_amortized_SDA window={window_size} predictive_horizon={predictive_hor}
 ```
 
 where `window_size` indicates the size of the Markov blanket, and `predictive_hor` indicates the number of frames that do not contain any conditioning information (H from the paper).

@@ -37,14 +37,16 @@ def check_experiment_name(name: str, amortized: bool = False):
             and 
                 (
                     ("burgers" in name) or 
-                    ("KS" in name) or 
+                    ("KS" in name) or
+                    ("RW" in name) or
                     ("kolmogorov" in name)
                 )
             )
         
     return (
             ("burgers" in name) or 
-            ("KS" in name) or 
+            ("KS" in name) or
+            ("RW" in name) or
             ("kolmogorov" in name)
         )
 
